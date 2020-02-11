@@ -1,0 +1,18 @@
+﻿@using WebApplication2.Models
+@model IEnumerable<City>
+
+
+<div>
+    <p>частичное представление</p>
+</div>
+
+@Model.Count()
+
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>
+           @item.Name
+        </li>
+    }
+</ul>

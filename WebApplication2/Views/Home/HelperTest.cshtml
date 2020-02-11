@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "HelperTest";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.TextBox("Quantity","", new { placeholder = "text" });
+    }
+</body>
+</html>
+
